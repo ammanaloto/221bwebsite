@@ -1,0 +1,82 @@
+<!doctype html>
+<head>
+<link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+<script src="../script/scriptsheet.js"></script>
+</head>
+
+<link rel="shortcut icon" href="../images/logoicon.jpg" />
+<body>
+	<div id="header">
+		<div class="navLinks"><a href="../index.html">Home</a></div>
+		<div class="navLinks"><a href="about.html">About</a></div>
+		<div class="navLinks"><a href="cases.html">Cases</a></div>
+		<div class="navLinks"><a href="contact.html">Contact</a></div>
+	</div>
+	
+	<div id="mySidebar" class="sidebar">
+		<a href="javascript:void(0)" class="closeBttn" onclick="closeNav()">&times;</a>
+		<div class="sbTitles">News</div>
+		<div class="sbContent">
+			<ul>
+				
+				<li>August 11, 2014<br> - <br>Blog update:<br><a href="http://www.johnwatsonblog.co.uk/blog/11august">The Sign of Three </a></li>
+				<br>
+				<li>November 7, 2013<br> - <br>Blog update:<br><a href="http://www.johnwatsonblog.co.uk/blog/21july">The Mayfly Man</a></li>
+				<br>
+				<li>August 8, 2011<br> - <br>Blog update:<br><a href="http://www.johnwatsonblog.co.uk/blog/02july">The Hollow Client</a></li>
+			</ul>
+		</div>
+		
+		<div class="sbTitles">Sign up for email updates!</div>
+		<div class="sbContent">
+			<form name="myForm" action="" onsubmit="x()">
+				<input type="text" name="email"  placeholder="Enter Email">
+				<input type="submit" value="submit">
+			</form>
+			
+		</div>
+	</div>
+	
+	<div id="sidebarTab" onclick="openNav()">N<br>E<br>W<br>S</div>
+
+	<div id="mainContainer">
+		<div id="mainHeader">Contact</div>
+		
+		<div id="formContainer">
+			
+			<form name="contactForm" id="contactForm" action="#" method="get" onsubmit="contact()">
+					<input class="input" name="fName" type="text" size="30" placeholder="First Name" />
+					<input class="input" name="lName" type="text" size="30" placeholder="Last Name" />
+					<input class="input" name="email" type="text" size="30" placeholder="Email" />
+					<input  type="checkbox" name="quote" value="quote"><span id="formQuote">Request price quote</span>
+					<select class="input" name="selectionField">
+						<option value="" disabled selected>Select Case Subject</option>
+						<option value="LA" >Love affair</option>
+						<option value="MPP" >Missing Person/Pet</option>
+						<option value="SI" >Security Issue</option>
+						<option value="WA" >Wrongful accusation</option>
+						<option value="OTH" >Other</option>
+					<textarea class="input" name="message" rows="15" cols="35" placeholder="Start from the beginning... don't be boring."></textarea>
+				<input name="submit" type="button" value="Submit" />
+				<input type="button" value="Reset"><br>
+			</form>
+		</div>
+		
+		<div id="locContainer">
+			<div id="contactInfo">
+				<p><span class="contactHeader">Phone:</span><br>(020) 7946 0018</p>
+				<p><span class="contactHeader">Address:</span><br>221B Baker Street<br>London, UK</p>
+				<p><span class="contactHeader">Email:</span><br>sherlockholmes@thescienceofdeduction.co.uk<br>johnhwatson@johnwatsonblog.co.uk</p>
+			</div>
+		
+			<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:300px;width:300px;'><div id='gmap_canvas' style='height:300px;width:300px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="https://privacypolicygenerator.info">privacy policy example</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(51.5237715,-0.15853849999996328),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(51.5237715,-0.15853849999996328)});infowindow = new google.maps.InfoWindow({content:'<strong>221B Baker Street</strong><br>221B Baker St Marylebone, London NW1 6XE UK<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+		</div>
+		
+	</div>
+	
+	<div id="mapLink"><a href="sitemap.html">Map</a></div>
+	
+	<div id="footer">
+	</div>
+</body>
+</html>
